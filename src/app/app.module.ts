@@ -11,7 +11,10 @@ import { FeaturesComponent } from './features/features.component';
 import { CreateFeaturesComponent } from './features/create-features/create-features.component';
 import { EditFeaturesComponent } from './features/edit-features/edit-features.component';
 import { ViewFeaturesComponent } from './features/view-features/view-features.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { HttpClientModule } from '@angular/common/http';
 
+import { FeaturesService } from './services/features.service';
 
 @NgModule({
   declarations: [
@@ -26,9 +29,11 @@ import { ViewFeaturesComponent } from './features/view-features/view-features.co
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    MatButtonModule, MatIconModule
+    MatButtonModule, MatIconModule,
+    MatSidenavModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [FeaturesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

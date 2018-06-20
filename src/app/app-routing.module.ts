@@ -5,10 +5,8 @@ import { CreateFeaturesComponent } from './features/create-features/create-featu
 import { EditFeaturesComponent } from './features/edit-features/edit-features.component';
 import { ViewFeaturesComponent } from './features/view-features/view-features.component';
 
-
-
 const routes: Routes = [
-  { path: '', component: FeaturesComponent},
+  { path: 'features', component: FeaturesComponent},
   { path: 'create-features', component: CreateFeaturesComponent},
   { path: 'view-features', component: ViewFeaturesComponent },
   { path: 'edit-features', component: EditFeaturesComponent }
